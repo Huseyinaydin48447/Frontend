@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Disney+</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+  
+
+    .nav__logo {
+      width: 100px;
+    }
+
+    .nav__avatar {
+      width: 40px;
+      border-radius: 50%;
+    }
+    .avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+ -index: 9999; z
+}
+
+
+    .banner {
+    
+      background-image: url("./web_resimler/x3.jpg");
+     
+      background-position: center center;
+      position: relative;
+    
+      border: 3px solid #73AD21;
+      position: relative;
+      margin-left: 0;
+
+
+
+
+      width: 100%;
+  height: 550px;
+  background-size: 100% 100%;
+    }
+
+    .banner__contents {
+      position: absolute;
+      bottom: 10%;
+      left: 5%;
+      color: white;
+    }
+
+    .banner__title {
+      font-size: 3rem;
+      font-weight: bold;
+      color: chartreuse
+    }
+
+    .banner__buttons {
+      display: flex;
+      margin-top: 20px;
+    }
+
+    .banner__button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.banner__button:hover {
+  transform: scale(1.1);
+}
+
+    .banner__button:first-child {
+      background-color: white;
+      color: black;
+    }
+
+    .banner__button:last-child {
+      background-color: rgba(255, 255, 255, 0.5);
+      color: white;
+    }
+
+    .banner__description {
+      width: 45%;
+      font-size: 1.2rem;
+    }
+
+
+
+    .row {
+      margin-left: 20px;
+      color: white;
+      margin-left: 0;
+
+    }
+
+    .row__posters {
+      display: flex;
+      margin-left: 0;
+
+      padding-bottom: 5px;
+    }
+
+    .row__poster {
+      object-fit: contain;
+      width: 100%;
+      max-height: 120px;
+
+      transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      transition-duration: .5s;
+      margin-right: 10px;
+      margin-left: 0;
+
+    }
+
+    .row__poster:hover {
+      transform: scale(1.08);
+      opacity: 1;
+    }
+
+    .row__posterLarge {
+      max-height: 250px;
+    }
+
+    .row__posterLarge:hover {
+      transform: scale(1.09);
+      opacity: 1;
+      margin-left: 0;
+
+    }
+
+  
+    body {
+      background-color: black;
+
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <!-- header -->
+  <header class="banner">
+    <div class=avatar>
+
+    <img src="./web_resimler/q2.jpg" alt="Avatar" class="avatar">
+
+    </div>
+    <div class="banner__contents">
+      <h1 class="banner__title">Welcome to Disney+!</h1>
+      <div class="banner__buttons">
+        <button class="banner__button">Sign up</button>
+        <button class="banner__button">Register</button>
+
+      </div>
+
+      <h1 class="banner__description">
+      Discover your favorite Disney movies, series, and more, all in one place...
+      </h1>
+    </div>
+    <div class="banner--fadeBottom"></div>
+  </header>
+
+
+  <div class="row">
+    <h2>DISNEY+ ORIGINALS</h2>
+    <div class="row__posters">
+      <img class="row__poster row__posterLarge" src="./web_resimler/2.jpg" alt="">
+
+      <img class="row__poster row__posterLarge" src="./web_resimler/3.jpg" alt="">
+      <img class="row__poster row__posterLarge" src="./web_resimler/4.jpg" alt="">
+      <img class="row__poster row__posterLarge" src="./web_resimler/5.jpg" alt="">
+      <img class="row__poster row__posterLarge" src="./web_resimler/6.jpg" alt="">
+      <img class="row__poster row__posterLarge" src="./web_resimler/7.jpg" alt="">
+      <img class="row__poster row__posterLarge" src="./web_resimler/8.jpg" alt="">
+      <img class="row__poster row__posterLarge" src="./web_resimler/11.jpg" alt="">
+    </div>
+  </div>
+
+  <!-- Trending Now -->
+  <div class="row">
+    <h2>Trending Now</h2>
+    <div class="row__posters">
+      <img class="row__poster row__posterLarge" src="./web_resimler/a2.jpg" alt="">
+
+      <img class="row__poster" src="./web_resimler/a3.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a4.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a5.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a6.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a7.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a8.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a9.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/a10.jpg" alt="">
+      <!-- <img class="row__poster" src="./web_resimler/a11.jpg" alt=""> -->
+
+
+
+    </div>
+  </div>
+
+  <!-- Top Rated -->
+  <div class="row">
+    <h2>Top Rated</h2>
+    <div class="row__posters">
+      <img class="row__poster" src="./web_resimler/b1.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/b2.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/b3.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/b4.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/b5.jpg" alt="">
+      <!-- <img class="row__poster" src="./web_resimler/b6.jpg" alt=""> -->
+      <img class="row__poster" src="./web_resimler/b7.jpg" alt="">
+      <img class="row__poster" src="./web_resimler/b8.jpg" alt="">
+    </div>
+    <!-- Romance Movies -->
+    <div class="row">
+      <h2>Romance Movies</h2>
+      <div class="row__posters">
+        <!-- <img class="row__poster" src="./web_resimler/c1.jpg" alt=""> -->
+        <img class="row__poster" src="./web_resimler/c2.jpg" alt="">
+        <img class="row__poster" src="./web_resimler/c3.jpg" alt="">
+        <img class="row__poster" src="./web_resimler/c4.jpg" alt="">
+        <img class="row__poster" src="./web_resimler/c5.jpg" alt="">
+        <!-- <img class="row__poster" src="./web_resimler/c6.jpg" alt=""> -->
+        <img class="row__poster" src="./web_resimler/c7.jpg" alt="">
+        <img class="row__poster" src="./web_resimler/c8.jpg" alt="">
+      </div>
+
+      <!--  Documentaries-->
+      <div class="row">
+        <h2> Documentaries</h2>
+        <div class="row__posters">
+          <!-- <img class="row__poster" src="./web_resimler/d4.jpg" alt=""> -->
+
+          <img class="row__poster" src="./web_resimler/d1.jpg" alt="">
+          <img class="row__poster" src="./web_resimler/d2.jpg" alt="">
+
+          <img class="row__poster" src="./web_resimler/d3.jpg" alt="">
+
+          <img class="row__poster" src="./web_resimler/d5.jpg" alt="">
+          <img class="row__poster" src="./web_resimler/d6.jpg" alt="">
+          <img class="row__poster" src="./web_resimler/d7.jpg" alt="">
+          <!-- <img class="row__poster" src="./web_resimler/d8.jpg" alt=""> -->
+
+        </div>
+        <script>
+          const nav = document.getElementById('nav');
+          window.addEventListener('scroll', () => {
+            if (window.scrollY >= 100) {
+              nav.classList.add('nav__black');
+            } else {
+              nav.classList.remove('nav__black');
+            }
+          });
+        </script>
+
+
+</body>
+
+</html>
